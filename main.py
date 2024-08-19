@@ -5,6 +5,7 @@
         To extract marks from SM Marks so they can be easily entered into 
         other programs for use in the Studies Department
 """
+
 ###
 # Imports
 ###
@@ -13,23 +14,28 @@
 
 # Local imports
 
-
 # ============ #
 
 ###
 # Globals
 ###
 
-# ============ # 
-
-###
-# Auxiliary functions
-### 
-
 # ============ #
 
 ###
 # MARK: Main Function
-### 
+###
+
+
 def main():
     """Main entry point for Application"""
+
+
+###
+# Auxiliary functions
+###
+
+# ============ #
+
+if __name__ == '__main__':
+    main() # Run entry point
