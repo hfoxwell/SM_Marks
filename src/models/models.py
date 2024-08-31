@@ -14,21 +14,8 @@
 from dataclasses import dataclass
 
 
-# Classes
-@dataclass
-class MarkBook:
-    """Represents a markbook"""
-
-    key: str
-    name: str
-    owner: str
-    year: str
-    course: str
-
-
 @dataclass
 class User:
-    """Represents a User such as a teacher"""
 
     key: str
     name: str
@@ -38,7 +25,6 @@ class User:
 
 @dataclass
 class Task:
-    """Represents a single assessable task"""
 
     key: str
     name: str
@@ -48,7 +34,6 @@ class Task:
 
 @dataclass
 class Student:
-    """Represents a student in a markbook"""
 
     key: str
     student_ID: str
@@ -61,10 +46,21 @@ class Student:
 
 @dataclass
 class Outcome:
-    """Represents an assessable outcome"""
 
     key: str
     code: str
     name: str
     outcome: str
     task_list: list[Task]
+
+
+@dataclass
+class MarkBook:
+
+    key: str
+    name: str
+    owner: str
+    year: str
+    course: str
+    tasks: list[Task]
+    students: list[Student]
